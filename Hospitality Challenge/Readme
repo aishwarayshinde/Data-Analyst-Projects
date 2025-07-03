@@ -1,1 +1,71 @@
+# 🏨 Hospitality Revenue Insights Dashboard – AtliQ Grands
+
+## 📄 Project Description
+
+This Power BI dashboard was developed for **AtliQ Grands**, a luxury five-star hotel chain in India, to provide actionable insights to their **Revenue Management Team**. The company has been facing a decline in market share and revenue due to ineffective decision-making and increased competition. This project aims to support strategic decisions through business intelligence and data visualization.
+
+---
+
+## ❓ Problem Statement
+
+AtliQ Grands lacked a dedicated data analytics team and sought help to:
+- Understand historical revenue performance.
+- Identify trends and patterns in occupancy, revenue, and booking behavior.
+- Enable the leadership to make data-driven decisions to regain market share in the luxury/business hotel segment.
+
+As a data analyst, I was tasked with:
+- Creating all key metrics as defined by stakeholders.
+- Building a comprehensive dashboard using the provided mock-up.
+- Generating **additional insights** beyond the original requirements to add value.
+
+---
+
+## 📊 Key Features & Insights
+
+- 📅 Monthly and Weekly Revenue Trends  
+- 🛏️ Occupancy Rate, ADR (Average Daily Rate), RevPAR  
+- 🧭 Region-wise and Property-wise Performance  
+- 📌 Dynamic filters: Region, Hotel, Room Types  
+- 📈 Comparative analysis: Actual vs Last Year  
+- 📉 Low occupancy/high ADR anomaly detection  
+- 📋 Executive summary of key KPIs  
+
+---
+
+## 🔧 Tools & Techniques Used
+
+- **Power BI Desktop** for interactive dashboard development  
+- **Power Query** for cleaning, merging, and transforming raw datasets  
+- **DAX** (Data Analysis Expressions) for creating complex measures and KPIs  
+- **Time Intelligence**: YTD, YoY, and MTD calculations  
+- **Data Modeling** using a star schema with proper relationships
+
+---
+
+## 📁 Dataset Information
+
+- Source: Provided by Code Basics  
+- Format: CSV files  
+- Key Tables:
+  - `fact_aggregated_bookings`: Transactional data of room bookings  
+  - `dim_hotels`: Hotel-level metadata  
+  - `fact_bookings`: Individual room booking transactions with revenue and stay details.  
+  - `dim_date`: Calendar table for time-based analysis  
+
+---
+
+## 🧮 Sample DAX Measures
+
+- `Total Revenue = SUM(Bookings[Revenue])`  
+- `RevPAR = [Total Revenue] / [Total Available Rooms]`  
+- `Occupancy % = DIVIDE([Occupied Rooms], [Total Available Rooms])`  
+- `YoY Revenue Change = ([Current Year Revenue] - [Last Year Revenue]) / [Last Year Revenue]`  
+
+---
+
+
+## 🙋‍♂️ Author
+
+**Aishwaray Shinde**  
+
 
