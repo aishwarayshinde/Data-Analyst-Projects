@@ -40,11 +40,12 @@ The task was to design and deliver a dashboard solution using inputs from the st
 ## 📁 Dataset Information
 
 - **Key Tables:**
-  - `Customer Orders`: Daily order data including planned and actual delivery dates and quantities.  
-  - `Customer Targets`: Target OTIF% and service level goals for each customer.  
-  - `Product`: Information about product categories and SKUs.  
-  - `City`: Regional dimension to analyze location-based performance.  
-  - `Date`: Calendar table for time-based filtering and aggregation.
+  - `dim_customers`: Customer details including name, location, and target service levels.
+  - `dim_date`: Calendar table for time-based filtering and aggregation.
+  - `dim_target_orders`: Target OTIF% and service level goals for each customer.  
+  - `dim_products`: Information about product categories.  
+  - `fact_order_lines`:  Line-level data of customer orders including planned vs actual delivery dates and quantities.  
+  - `fact_orders_aggregate`:  Daily aggregated service metrics like OT%, IF%, and OTIF% by customer and order.
 
 ---
 
@@ -53,28 +54,10 @@ The task was to design and deliver a dashboard solution using inputs from the st
 - `OT % = DIVIDE(OnTimeOrders, TotalOrders)`  
 - `IF % = DIVIDE(InFullOrders, TotalOrders)`  
 - `OTIF % = DIVIDE(OTIFOrders, TotalOrders)`  
-- `OTIF Gap = [OTIF %] - [Target OTIF %]`
-
----
-
-## 📷 Dashboard Preview
-
-![Dashboard Screenshot](images/fmcg_otif_dashboard.png)
-
----
-
-## 🚀 How to Use
-
-1. Download the `.pbix` file from this repository  
-2. Open it in **Power BI Desktop**  
-3. Interact with filters to explore service levels by customer, city, and product  
-4. Review daily/weekly performance and spot delivery gaps
 
 ---
 
 ## 🙋‍♂️ Author
 
 **Aishwaray Shinde**  
-🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourprofile)
 
----
