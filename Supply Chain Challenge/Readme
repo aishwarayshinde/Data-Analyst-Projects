@@ -1,1 +1,80 @@
 
+# 🚚 FMCG Supply Chain OTIF Dashboard – AtliQ Mart
+
+## 📄 Project Description
+
+This Power BI dashboard was developed for **AtliQ Mart**, an emerging FMCG company based in Gujarat, to help resolve customer service issues caused by delayed or incomplete deliveries. The goal was to provide visibility into **On-Time**, **In-Full**, and **OTIF (On-Time-In-Full)** delivery metrics to improve service levels and ensure customer satisfaction before expanding into new cities.
+
+---
+
+## ❓ Problem Statement
+
+AtliQ Mart has been losing key customers due to delivery-related service issues. There was no reliable system in place to monitor delivery performance metrics on a day-to-day basis. The **Supply Chain team** required a data-driven dashboard to:
+- Track daily service levels for each customer.
+- Analyze trends in On-Time, In-Full, and OTIF delivery percentages.
+- Take swift action where targets are not being met.
+
+The task was to design and deliver a dashboard solution using inputs from the stakeholder meeting and supporting documentation.
+
+---
+
+## 📊 Key Features & Insights
+
+- 📦 Daily OT%, IF%, and OTIF% tracking for all customers  
+- 🎯 Comparison of actual performance vs customer-specific targets  
+- 🗺️ City-wise and Product-wise breakdown of delivery issues  
+- 📅 Time-series analysis to detect recurring delivery problems    
+
+---
+
+## 🔧 Tools & Techniques Used
+
+- **Power BI Desktop** for building interactive dashboards  
+- **Power Query** for data transformation and relationship setup  
+- **DAX** for calculating OT%, IF%, and OTIF% metrics  
+- **Conditional formatting** to highlight deviations from targets  
+- **Time intelligence** for comparing performance over time
+
+---
+
+## 📁 Dataset Information
+
+- **Key Tables:**
+  - `Customer Orders`: Daily order data including planned and actual delivery dates and quantities.  
+  - `Customer Targets`: Target OTIF% and service level goals for each customer.  
+  - `Product`: Information about product categories and SKUs.  
+  - `City`: Regional dimension to analyze location-based performance.  
+  - `Date`: Calendar table for time-based filtering and aggregation.
+
+---
+
+## 🧮 Sample DAX Measures
+
+- `OT % = DIVIDE(OnTimeOrders, TotalOrders)`  
+- `IF % = DIVIDE(InFullOrders, TotalOrders)`  
+- `OTIF % = DIVIDE(OTIFOrders, TotalOrders)`  
+- `OTIF Gap = [OTIF %] - [Target OTIF %]`
+
+---
+
+## 📷 Dashboard Preview
+
+![Dashboard Screenshot](images/fmcg_otif_dashboard.png)
+
+---
+
+## 🚀 How to Use
+
+1. Download the `.pbix` file from this repository  
+2. Open it in **Power BI Desktop**  
+3. Interact with filters to explore service levels by customer, city, and product  
+4. Review daily/weekly performance and spot delivery gaps
+
+---
+
+## 🙋‍♂️ Author
+
+**Aishwaray Shinde**  
+🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourprofile)
+
+---
